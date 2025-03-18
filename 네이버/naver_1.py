@@ -125,6 +125,6 @@ def main(stock_code, until_when):
     print(df.head())
     
     # CSV로 저장 (원하는 경우)
-    df.to_csv(f"{stock_code}_forum_data.csv", index=False)
+    df.to_csv(f"naver_{stocks[stock_code]}.csv", index=False)
 
 main(list(stocks.keys())[0], until_when)
